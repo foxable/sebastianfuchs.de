@@ -5,16 +5,16 @@ import Helmet from 'react-helmet'
 import "../css/bulma.css";
 
 const Header = () => (
-  <nav className="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation" style={{ transform: "translateY(0px)" }}>
+  <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={{ transform: "translateY(0px)" }}>
     <div className="container">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item title">
-          foxable.net
+        <Link to="/" className="navbar-item">
+          <strong>foxable.net</strong>
         </Link>
       </div>
       <div className="navbar-menu">
         <div className="navbar-start">
-          <Link to="/" className="navbar-item">Home</Link>
+          <Link to="/" className="navbar-item" activeClassName="is-active">Home</Link>
         </div>
       </div>
     </div>    
@@ -31,17 +31,31 @@ interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
 class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
   public render() {
     return (
-      <div>
+      <>
         <Helmet
           title="foxable.net"
         />
         <Header />
+        <section className="hero is-primary">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">Home</h1>
+            </div>
+          </div>
+        </section>
         <section className="section">
           <div className="container">
             {this.props.children()}
           </div>
         </section>
-      </div>
+        <footer className="footer">
+          <div className="container">
+            <div className="content has-text-centered">
+              <strong>foxable.net</strong> by Sebastian Fuchs
+            </div>
+          </div>
+        </footer>
+      </>
     )
   }
 }
