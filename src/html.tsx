@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === `production`) {
 
 interface HtmlProps {
   body: any;
+  preBodyComponents: any;
   postBodyComponents: any;
   headComponents: any;
 }
@@ -48,6 +49,7 @@ module.exports = (props: HtmlProps) => {
         {css}
       </head>
       <body>
+        {props.preBodyComponents}
         <div
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}

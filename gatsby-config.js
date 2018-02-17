@@ -3,8 +3,8 @@ module.exports = {
     title: `foxable.net`,
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
-    // Add typescript stack into webpack
     `gatsby-plugin-typescript`
   ],
 }
