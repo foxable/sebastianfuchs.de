@@ -1,1 +1,1 @@
-The the personal website http://www.foxable.net, based on Gatsby
+This is the Gatsby setup for the personal website http://www.foxable.net.
