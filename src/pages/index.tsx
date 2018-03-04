@@ -19,15 +19,21 @@ export default class extends React.Component<IndexPageProps, {}> {
   }
   public render() {
     return (
-      <div>
-        <h1 className="title">Hi people</h1>
-        <p>
-          Welcome to your new{' '}
-          <strong>{this.props.data.site.siteMetadata.title}</strong> site.
-        </p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link>
-      </div>
+      <>
+        <section className="hero is-primary">
+          <div className="hero-body">
+            <div className="container">
+              <p className="title">Sebastian Fuchs</p>
+              <p className="subtitle">Software-Entwickler, Web Enthusiast</p>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+            Einführungstext
+          </div>
+        </section>
+      </>
     )
   }
 }

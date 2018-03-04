@@ -9,7 +9,7 @@ const Header = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <strong>foxable.net</strong>
+          <strong>foxable</strong>
         </Link>
       </div>
       <div className="navbar-menu">
@@ -35,23 +35,13 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
         <Helmet
           title="foxable.net"
         />
-        <Header />
-        <section className="hero is-primary">
-          <div className="hero-body">
-            <div className="container">
-              <h1 className="title">Home</h1>
-            </div>
-          </div>
-        </section>
-        <section className="section">
-          <div className="container">
-            {this.props.children()}
-          </div>
-        </section>
+        <Header />        
+        {this.props.children()}
         <footer className="footer">
           <div className="container">
             <div className="content has-text-centered">
-              <strong>foxable.net</strong> by Sebastian Fuchs
+              <p><strong>foxable</strong> by Sebastian Fuchs</p>
+              <p><Link to="/impressum">Impressum</Link></p>
             </div>
           </div>
         </footer>
