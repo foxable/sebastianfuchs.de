@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import "../css/bulma.css";
+import "./index.scss";
 
 const Header = () => (
   <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={{ transform: "translateY(0px)" }}>
