@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import * as FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { faTwitter, faGithub } from '@fortawesome/fontawesome-free-brands'
 
 import "./index.scss";
 
@@ -40,6 +42,10 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
         <footer className="footer">
           <div className="container">
             <div className="content has-text-centered">
+              <p>
+                <a href="https://twitter.com/sefuchs" title="Twitter" className="icon is-medium"><FontAwesomeIcon icon={faTwitter} size="lg"/></a>
+                <a href="https://github.com/foxable" title="Github" className="icon is-medium"><FontAwesomeIcon icon={faGithub} size="lg"/></a>
+              </p>
               <p><strong>foxable</strong> by Sebastian Fuchs</p>
               <p><Link to="/impressum">Impressum</Link></p>
             </div>
