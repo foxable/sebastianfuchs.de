@@ -41,7 +41,7 @@ export default class Layout extends React.PureComponent<LayoutComponentProps>
                 { name: 'keywords', content: 'sample, something' },
               ]}
             >
-              <html lang="en" className="has-navbar-fixed-top" />
+              <html lang="en"/>
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             {this.props.children}
