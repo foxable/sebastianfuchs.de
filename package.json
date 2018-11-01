@@ -1,38 +1,37 @@
 {
-  "name": "foxable.net",
-  "description": "Personal Homepage",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Sebastian Fuchs <foxable@mailbox.org>",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "@fortawesome/fontawesome-free-brands": "^5.0.8",
-    "@fortawesome/react-fontawesome": "0.0.17",
-    "@types/node": "^9.4.6",
-    "@types/react": "^16.0.38",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-helmet": "^5.0.4",
-    "bulma": "^0.6.2",
-    "gatsby": "^1.9.119",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-react-helmet": "^2.0.6",
-    "gatsby-plugin-react-next": "^1.0.9",
-    "gatsby-plugin-sass": "^1.0.18",
-    "gatsby-plugin-typescript": "^1.4.10",
-    "react": "^16.0.0",
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby, typescript"
+    "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.8.2"
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
