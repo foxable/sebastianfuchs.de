@@ -5,7 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
 
-import '../../node_modules/bulma/css/bulma.css';
+import '../../node_modules/bulma/css/bulma.css'
+import './layout.scss'
 
 interface LayoutComponentProps
 {
