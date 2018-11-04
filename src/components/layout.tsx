@@ -6,6 +6,7 @@ import Header from './header'
 import Footer from './footer'
 
 import '../../node_modules/bulma/css/bulma.css'
+import '../../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
 import './layout.scss'
 
 interface LayoutComponentProps
@@ -38,8 +39,8 @@ export default class Layout extends React.PureComponent<LayoutComponentProps>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
+                { name: 'description', content: 'Sebastian Fuchs - Software Entwickler & web Enthusiast' },
+                { name: 'keywords', content: 'Sebastian Fuchs, foxable' },
               ]}
             >
               <html lang="en"/>

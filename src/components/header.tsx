@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Title, Subtitle, Navbar, NavbarBrand, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Container } from 'bloomer';
+import { Navbar, NavbarBrand, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Container } from 'bloomer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub, faXing, faFlickr } from '@fortawesome/free-brands-svg-icons'
@@ -19,10 +19,10 @@ const Header = ({ siteTitle }) => (
         <NavbarStart>
         </NavbarStart>
         <NavbarEnd>
-          <NavbarItem href="https://github.com/foxable" title="GitHub"><FontAwesomeIcon icon={faGithub}/></NavbarItem>
-          <NavbarItem href="https://twitter.com/sefuchs" title="Twitter"><FontAwesomeIcon icon={faTwitter}/></NavbarItem>          
-          <NavbarItem href="https://www.xing.com/profile/Sebastian_Fuchs77" title="Xing"><FontAwesomeIcon icon={faXing}/></NavbarItem>
-          <NavbarItem href="https://www.flickr.com/photos/167371494@N04" title="Flickr"><FontAwesomeIcon icon={faFlickr}/></NavbarItem>
+          <NavbarItem href="https://github.com/foxable" title="GitHub"><FontAwesomeIcon icon={faGithub} size="lg"/></NavbarItem>
+          <NavbarItem href="https://twitter.com/sefuchs" title="Twitter"><FontAwesomeIcon icon={faTwitter} size="lg"/></NavbarItem>          
+          <NavbarItem href="https://www.xing.com/profile/Sebastian_Fuchs77" title="Xing"><FontAwesomeIcon icon={faXing} size="lg"/></NavbarItem>
+          <NavbarItem href="https://www.flickr.com/photos/167371494@N04" title="Flickr"><FontAwesomeIcon icon={faFlickr} size="lg"/></NavbarItem>
         </NavbarEnd>
       </NavbarMenu>
     </Container>

@@ -3,7 +3,7 @@ import { Section, Container, Hero, HeroBody } from 'bloomer';
 
 import Layout from '../components/layout'
 
-import portrait from '../images/portrait.jpg'
+import portrait from './../images/portrait.jpg'
 
 export default class IndexPage extends React.Component<{}, {}>
 {
