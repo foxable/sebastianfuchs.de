@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'foxable',
+    title: 'Sebastian Fuchs - Software Entwickler & Web Enthusiast',
   },
   plugins: [
     'gatsby-plugin-typescript',

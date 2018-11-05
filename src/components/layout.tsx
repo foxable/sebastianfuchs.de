@@ -1,4 +1,4 @@
-import React, { ReactChildren } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
@@ -39,11 +39,11 @@ export default class Layout extends React.PureComponent<LayoutComponentProps>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Sebastian Fuchs - Software Entwickler & web Enthusiast' },
-                { name: 'keywords', content: 'Sebastian Fuchs, foxable' },
+                { name: 'description', content: 'Sebastian Fuchs, Software Entwickler aus Bonn mit einer Leidenschaft fürs Web' },
+                { name: 'keywords', content: 'software development, web, frontend, ux' },
               ]}
             >
-              <html lang="en"/>
+              <html lang="de"/>
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
             {this.props.children}
