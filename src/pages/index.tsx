@@ -1,5 +1,10 @@
 import React from 'react'
-import { Section, Container, Hero, HeroBody } from 'bloomer';
+import {
+  Section,
+  Container,
+  Hero,
+  HeroBody
+} from 'bloomer';
 
 import Layout from '../components/layout'
 

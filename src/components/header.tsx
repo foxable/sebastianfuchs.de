@@ -1,9 +1,21 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Navbar, NavbarBrand, NavbarItem, NavbarMenu, NavbarStart, NavbarEnd, Container } from 'bloomer';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarItem,
+  NavbarMenu,
+  NavbarStart,
+  NavbarEnd,
+  Container } from 'bloomer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faXing, faFlickr } from '@fortawesome/free-brands-svg-icons'
+import {
+  faTwitter,
+  faGithub,
+  faXing,
+  faFlickr
+} from '@fortawesome/free-brands-svg-icons'
 
 const Header = ({ siteTitle }) => (
   <Navbar className="is-dark is-spaced">

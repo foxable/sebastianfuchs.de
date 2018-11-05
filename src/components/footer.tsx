@@ -1,6 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Footer as FooterElement, Container, Level, LevelLeft, LevelRight } from 'bloomer';
+import {
+  Footer as FooterElement,
+  Container,
+  Level,
+  LevelLeft,
+  LevelRight
+} from 'bloomer';
 
 const Footer = () => (
   <FooterElement>
