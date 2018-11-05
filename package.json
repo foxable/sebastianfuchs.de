@@ -1,6 +1,6 @@
 {
-  "name": "foxable-personal-website",
-  "description": "Personal website of Sebastian Fuchs",
+  "name": "foxable-website",
+  "description": "The personal website of Sebastian Fuchs",
   "version": "1.0.0",
   "author": "Sebastian Fuchs <foxable@mailbox.org>",
   "dependencies": {
@@ -23,8 +23,8 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby",
     "typescript",
+    "gatsby",    
     "bulma"
   ],
   "license": "MIT",
